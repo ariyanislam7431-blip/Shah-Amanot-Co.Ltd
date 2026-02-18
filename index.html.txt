@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shah Amanot Co. Ltd</title>
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
+}
+header{
+    background:#111;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+nav{
+    background:#ff6600;
+    padding:10px;
+    text-align:center;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+.hero{
+    background:url('https://images.unsplash.com/photo-1581091870627-3a8e6f8b9c8d');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+.container{
+    padding:40px 20px;
+}
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    text-align:center;
+}
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:8px;
+}
+button{
+    background:green;
+    color:white;
+    padding:10px 15px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+.review-box{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Shah Amanot Co. Ltd</h1>
+<p>Best Quality Battery Supplier in Bangladesh</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+<h2>Reliable Car, IPS & Solar Battery</h2>
+<p>Trusted Service & Warranty Support</p>
+</section>
+
+<div class="container" id="products">
+<h2>Our Products</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db" alt="">
+<h3>Car Battery 12V</h3>
+<p>High performance long lasting battery.</p>
+<button onclick="order()">Order Now</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1584270354949-c26b0d5b4a5b" alt="">
+<h3>IPS Battery</h3>
+<p>Strong backup support for home & office.</p>
+<button onclick="order()">Order Now</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1593941707874-ef25b8b4a92b" alt="">
+<h3>Solar Battery</h3>
+<p>Heavy duty solar power solution.</p>
+<button onclick="order()">Order Now</button>
+</div>
+
+</div>
+</div>
+
+<div class="container">
+<h2>Customer Review</h2>
+<div class="review-box">
+<input type="text" placeholder="Your Name">
+<textarea placeholder="Write your review"></textarea>
+<button>Submit</button>
+</div>
+</div>
+
+<footer id="contact">
+<p>Contact: 01XXXXXXXXX</p>
+<p>© 2026 Shah Amanot Co. Ltd</p>
+</footer>
+
+<script>
+function order(){
+    window.location.href="https://wa.me/8801XXXXXXXXX";
+}
+</script>
+
+</body>
+</html>
